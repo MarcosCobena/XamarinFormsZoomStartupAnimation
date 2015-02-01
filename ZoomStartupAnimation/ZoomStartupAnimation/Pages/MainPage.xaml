@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ZoomStartupAnimation.MainPage">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <OnPlatform x:Key="BackgroundColor"
+        x:TypeArguments="Color"
+        iOS="White"
+        Android="White"
+        WinPhone="Black" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+	<ContentPage.Content>
+		<Grid BackgroundColor="{StaticResource BackgroundColor}">
+			<Button x:Name="StartAgainButton"
+				Text="Start again!"
+				HorizontalOptions="Center"
+				VerticalOptions="Center" />
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>
